@@ -1,0 +1,181 @@
+		</br>
+		</div>
+	</div>
+	<div class="row clearfix" id="main_menu">
+		<div class="col-md-4 column">
+		</div>
+		<div class="col-md-4 column">
+			<a href="#" onclick="roll()" class="btn btn-danger btn-large btn-block">Roll! (-5C)</a><br/>
+			<a href="#" onclick="test()" class="btn btn-primary btn-large btn-block">Challenge (+?C)</a><br/>
+			<a href="#" onclick="daily()" class="btn btn-primary btn-large btn-block">Daily</a><br/>
+			<a href="#" onclick="final()" class="btn btn-primary btn-large btn-block">Finish! (-1T)</a><br/>
+			<form id="game" action="index.php" method="post">
+				<input type="hidden" name="action" id="move" value=""/>
+			</form>
+			<script>
+				function roll() {$("#move").val("roll");$("#game").submit();}
+				function test() {$("#move").val("test");$("#game").submit();}
+				function daily() {$("#move").val("daily");$("#game").submit();}
+				function final() {$("#move").val("final");$("#game").submit();}
+			</script>
+			<a href="#" onclick="menuTOset()" class="btn btn-default btn-large btn-block">Settings</a><br/>
+			<a href="#" onclick="menuTOhelp()" class="btn btn-default btn-large btn-block">How to Play</a><br/>
+			<script>
+				function menuTOset() {$("#settings").slideDown();$("#main_menu").slideUp();}
+				function menuTOhelp() {$("#help").slideDown();$("#main_menu").slideUp();}
+			</script>
+		</div>
+		<div class="col-md-4 column">
+		</div>
+	</div>
+	<div class="row clearfix" id="help" style="display:none;">
+		<div class="col-md-12 column">
+			<div class="jumbotron">
+				<h1>How to serve...</h1>
+				<p>This game is all about obedience to your dom, me! By following my orders you'll earn favours with me that you can use to buy my love and possibly your orgasm.</p>
+				<p> The first thing you can do is roll, this is kind of like those <span style="color:#ff69b4;">rollnfap</span> forum games. You'll have more enjoyable orders, get to pick the categories, and potentially earn rewards, but it'll cost you 5 favours to play.</p>
+				<p> The second thing you can do is take on challenge orders, you'll never know what kind of orders or how many in a row there will be. But you're guaranteed to earn my love and favours. However, be aware that if you take on challenges and fail them to many times or run away during one, I will <span style="color:#ff69b4;">punish</span> you.</p>
+				<p> The next thing you can do is special. Daily challenges are only available once a day... clever right? The daily is universal to every girl, and they might go outside your <span style="color:#ff69b4;">boundaries</span>. I won't blame you if you don't want to accept these orders but they often have high rewards...</p>
+				<p> Some tasks will span multiple days or longer, for these you have a special reward. You'll earn <span style="color:#ff69b4;">extra</span> favours on the first login every day.</p>
+				<p>Lastly the thing you're most excited about, <span style="color:#ff69b4;">finishing.</span> You can spend one token you've earned to try for a chance to cum. If you complete 5 orders you win! Just remember to come back again for more fun.</p>
+				<p><a onclick="helpTOmenu()" class="btn btn-default btn-lg">I think I'm ready...</a></p>
+				<script>
+					function helpTOmenu() {$("#main_menu").slideDown();$("#help").slideUp();}
+				</script>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix" id="settings" style="display:none;">
+		<div class="col-md-12 column">
+			<ul class="nav nav-tabs">
+				<li class="active"><a aria-expanded="true" href="#setTab_Fets" onclick="$('#setTab_FMH').hide();$('#setTab_Items').hide();$('#setTab_Fets').show();" data-toggle="tab">Fetishes</a></li>
+				<li class=""><a aria-expanded="false" href="#setTab_Items" onclick="$('#setTab_Fets').hide();$('#setTab_FMH').hide();$('#setTab_Items').show();" data-toggle="tab">Items</a></li>
+				<li class=""><a aria-expanded="false" href="#setTab_FMH" onclick="$('#setTab_Fets').hide();$('#setTab_Items').hide();$('#setTab_FMH').show();" data-toggle="tab">Fuck me Harder!</a></li>
+				<li class=""><a onclick="setTOmenu()" class="btn">Main Menu</a></li>
+				<script>
+					function setTOmenu() {
+						$("#setting_MC").submit();
+					}
+					$(document).ready(function(){
+						$('[name*=menu_]').click(function(){
+							$(this).parent().toggleClass("btn-default");
+							$(this).parent().toggleClass("btn-danger");
+					});});
+				</script>
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<form id="setting_MC" method="post" action="index.php">
+				<input type="hidden" name="action" value="set"/>
+				<div class="tab-pane fade active in" id="setTab_Fets">
+					<p>Enable and Disable Fetishes based on your personal likes and dislikes, remember that your setting have no bearing on the daily challenge.</p>
+					<table class="switch"><tr>
+					<td><label class="btn btn-default" for="menu_f_0">Masturbating<input type="checkbox" id="menu_f_0" name="menu_f_0" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_1">Crossdressing<input type="checkbox" id="menu_f_1" name="menu_f_1" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_2">Pet Play<input type="checkbox" id="menu_f_2" name="menu_f_2" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_3">Age Play<input type="checkbox" id="menu_f_3" name="menu_f_3" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_f_4">Humiliation<input type="checkbox" id="menu_f_4" name="menu_f_4" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_5">Bondage<input type="checkbox" id="menu_f_5" name="menu_f_5" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_6">Anal<input type="checkbox" id="menu_f_6" name="menu_f_6" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_7">Oral<input type="checkbox" id="menu_f_7" name="menu_f_7" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_f_8">Watersports<input type="checkbox" id="menu_f_8" name="menu_f_8" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_9">Cum Play<input type="checkbox" id="menu_f_9" name="menu_f_9" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_10">A2M (light scat)<input type="checkbox" id="menu_f_10" name="menu_f_10" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_11">Chastity<input type="checkbox" id="menu_f_11" name="menu_f_11" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_f_12">Edging<input type="checkbox" id="menu_f_12" name="menu_f_12" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_13">Breath Play<input type="checkbox" id="menu_f_13" name="menu_f_13" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_14">Exhibition<input type="checkbox" id="menu_f_14" name="menu_f_14" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_15">Heat Play<input type="checkbox" id="menu_f_15" name="menu_f_15" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_f_16">Slutting<input type="checkbox" id="menu_f_16" name="menu_f_16" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_17">Furry<input type="checkbox" id="menu_f_17" name="menu_f_17" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_18">Urethra Play<input type="checkbox" id="menu_f_18" name="menu_f_18" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_f_19">Stench<input type="checkbox" id="menu_f_19" name="menu_f_19" style="display:none;"/></label></td>
+					</tr>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="setTab_Items">
+					<p>Enable and Disable Items based on what you own or have access to.</p>
+					<table class="switch"><tr>
+					<td><label class="btn btn-default" for="menu_i_0">Panties<input type="checkbox" id="menu_i_0" name="menu_i_0" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_1">Bra<input type="checkbox" id="menu_i_1" name="menu_i_1" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_2">Girly Clothes<input type="checkbox" id="menu_i_2" name="menu_i_2" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_3">Sissy Dress<input type="checkbox" id="menu_i_3" name="menu_i_3" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_i_4">Girly Socks<input type="checkbox" id="menu_i_4" name="menu_i_4" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_5">Heels<input type="checkbox" id="menu_i_5" name="menu_i_5" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_6">Nail Polish<input type="checkbox" id="menu_i_6" name="menu_i_6" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_7">Make-Up<input type="checkbox" id="menu_i_7" name="menu_i_7" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_i_8">Long Wig<input type="checkbox" id="menu_i_8" name="menu_i_8" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_9">Hair Brush<input type="checkbox" id="menu_i_9" name="menu_i_9" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_10">Ribbon<input type="checkbox" id="menu_i_10" name="menu_i_10" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_11">Shaving Supplies<input type="checkbox" id="menu_i_11" name="menu_i_11" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_i_12">Vibrator<input type="checkbox" id="menu_i_12" name="menu_i_12" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_13">Dildo<input type="checkbox" id="menu_i_13" name="menu_i_13" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_14">Another Dildo<input type="checkbox" id="menu_i_14" name="menu_i_14" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_15">Bad Dragon<input type="checkbox" id="menu_i_15" name="menu_i_15" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_i_16">Buttplug<input type="checkbox" id="menu_i_16" name="menu_i_16" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_17">Anal Beads<input type="checkbox" id="menu_i_17" name="menu_i_17" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_18">Fake Cum Lube<input type="checkbox" id="menu_i_18" name="menu_i_18" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_19">Huge Dildo<input type="checkbox" id="menu_i_19" name="menu_i_19" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_i_20">Maid Outfit<input type="checkbox" id="menu_i_20" name="menu_i_20" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_21">Cheer Outfit<input type="checkbox" id="menu_i_21" name="menu_i_21" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_22">SchoolGirl Outfit<input type="checkbox" id="menu_i_22" name="menu_i_22" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_23">Baby Girl Clothes<input type="checkbox" id="menu_i_23" name="menu_i_23" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_i_24">Diapers<input type="checkbox" id="menu_i_24" name="menu_i_24" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_25">Pacifier<input type="checkbox" id="menu_i_25" name="menu_i_25" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_26">Toilet<input type="checkbox" id="menu_i_26" name="menu_i_26" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_27">Enema Kit<input type="checkbox" id="menu_i_27" name="menu_i_27" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_i_28">Buttplug Tail<input type="checkbox" id="menu_i_28" name="menu_i_28" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_29">Collar<input type="checkbox" id="menu_i_29" name="menu_i_29" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_30">Leash<input type="checkbox" id="menu_i_30" name="menu_i_30" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_31">Gag<input type="checkbox" id="menu_i_31" name="menu_i_31" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_i_32">Rope<input type="checkbox" id="menu_i_32" name="menu_i_32" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_33">Blind Fold<input type="checkbox" id="menu_i_33" name="menu_i_33" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_34">Spreader Bar<input type="checkbox" id="menu_i_34" name="menu_i_34" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_35">Nose Hook<input type="checkbox" id="menu_i_35" name="menu_i_35" style="display:none;"/></label></td>
+					</tr><tr>
+					<td><label class="btn btn-default" for="menu_i_36">Nipple Clamps<input type="checkbox" id="menu_i_36" name="menu_i_36" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_37">Sex Candle<input type="checkbox" id="menu_i_37" name="menu_i_37" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_38">Sharpies<input type="checkbox" id="menu_i_38" name="menu_i_38" style="display:none;"/></label></td>
+					<td><label class="btn btn-default" for="menu_i_39">Webcam<input type="checkbox" id="menu_i_39" name="menu_i_39" style="display:none;"/></label></td>
+					</tr>
+					</table>
+				</div>
+				</form>
+				<div class="tab-pane fade" id="setTab_FMH">
+					<div class="jumbotron">
+						<h1>Oh god yes!</h1>
+						<p>While the game naturally gets kinkier or mellower depending on the orders you follow and refuse, some girls might find the game... boring... this is for those of you who find the game easy, it WILL ramp up the difficulty. If you find you can't follow the orders you ASKED for...</p>
+						<p>un-selecting and reselecting a category under fetishes undoes it's extremism.</p>
+						<p><a onclick="harder()" class="btn btn-default btn-lg">I think I'm ready...</a></p>
+						<script>
+							function harder() {$("#daftpunk").submit();}
+						</script>
+						<form id="daftpunk" action="index.php" method="post">
+							<input type="hidden" name="action" value="hard"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-4 column">
+		</div>
+		<div class="col-md-4 column">
+		</div>
+		<div class="col-md-4 column">
+		</div>
+	</div>
+</div>
+<script src="js/bootstrap.min.js"></script>
